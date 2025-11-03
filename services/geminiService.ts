@@ -1,11 +1,7 @@
 import { GoogleGenAI, Chat, GenerateContentResponse } from "@google/genai";
 import type { Message, Source } from '../types';
 
-if (!process.env.API_KEY) {
-    throw new Error("API_KEY environment variable not set");
-}
-
-const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+const ai = new GoogleGenAI({ apiKey: "placeholder" });
 
 const SYSTEM_INSTRUCTION = `Eres un asistente experto en Blender 3D, diseñado para ayudar a estudiantes.
 Tus respuestas deben ser en español latino.
