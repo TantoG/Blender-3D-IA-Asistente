@@ -1,10 +1,6 @@
-body {
-  background-color: #111827; /* Corresponds to Tailwind's gray-900 */
-  color: #f9fafb; /* Corresponds to Tailwind's gray-50 */
-  font-family: 'Inter', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 /* Custom Scrollbar Styling for a more polished look */
 ::-webkit-scrollbar {
@@ -23,9 +19,4 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background-color: #6b7280; /* gray-500 */
-}
-
-/* Ensure the app takes full height */
-html, body, #root {
-    height: 100%;
 }
