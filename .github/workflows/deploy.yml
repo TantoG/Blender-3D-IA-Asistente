@@ -23,8 +23,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Debug GEMINI_API_KEY
-        run: echo "GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}"
+
 
       - name: Build
         run: npm run build
